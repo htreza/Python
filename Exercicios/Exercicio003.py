@@ -1,5 +1,7 @@
 #Developed by Henrique Treza
 
+#Tabuada dos núemros até 0 14
+
 numero = int(input('Digite um número, para saber a sua tabuada!'))
 
 print('{} x {:2} = {}'.format(numero, 1, numero*1))
