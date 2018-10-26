@@ -1,4 +1,4 @@
-#Powered by Henrique Treza
+#Developed by Henrique Treza
 # Adição +
 # Subtração -
 # Multiplicação *

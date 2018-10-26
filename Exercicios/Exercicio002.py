@@ -1,3 +1,4 @@
+#Developed by Henrique Treza
 #Recebe algo e tenha todas as informações sobre o mesmo.
 # Mesmo colocando número ele irá retorna str (String)
 a = input('Digite algo do seu interesse: ')
