@@ -2,7 +2,7 @@
 
 #Tabuada dos núemros até 0 14
 
-numero = int(input('Digite um número, para saber a sua tabuada!'))
+numero = int(input('Digite um número, para saber a sua tabuada: '))
 
 print('{} x {:2} = {}'.format(numero, 1, numero*1))
 print('{} x {:2} = {}'.format(numero, 2, numero*2))
