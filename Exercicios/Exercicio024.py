@@ -8,4 +8,4 @@ if viagem <= 200:
     preco = viagem * 0.75
 else:
     preco = viagem * 1.10
-print('\033[032mO preço da sua passagem será de \033[mR$ {}'.format(preco))
+print('\033[032mO preço da sua passagem será de \033[mR$ {:.2f}'.format(preco))
