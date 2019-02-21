@@ -5,7 +5,7 @@
 print('Programa Detetive')
 print('Responda as perguntas abaixo com S (sim) ou N (nao)')
 
-perguntas = input('Voce telefonou para a vitima? ',
+perguntas = ('Voce telefonou para a vitima? ',
              'Voce esteve no local do crime? ',
              'Voce mora perto da vitima? ',
              'Voce devia para a vitima? ',
