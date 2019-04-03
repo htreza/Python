@@ -4,7 +4,7 @@
 #Exercicio Posto de Gasolina
 
 tipoCombustivel = str(input('Informe (A) para Alcool ou (G) para Gasolina: ')).upper()
-quantidadeLitros = float(raw_input('Informe a quantidade de litros: '))
+quantidadeLitros = float(input('Informe a quantidade de litros: '))
 
 
 if (tipoCombustivel == 'A'):
@@ -21,4 +21,4 @@ else:
         desconto = 6
 
 totalPagar = (valor * quantidadeLitros) * ((100 - desconto) / 100.0)
-    print('Total a pagar R${:.2f}'.format(totalPagar))
+print('Total a pagar R${:.2f}'.format(totalPagar))
