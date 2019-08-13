@@ -4,7 +4,7 @@
 
 from random import randint
 from time import sleep
-import emoji
+
 
 computador = randint(1, 20) #Computador seleciona um numero entre o parametro passado
 print('=.='* 20)
