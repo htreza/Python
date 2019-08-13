@@ -41,10 +41,10 @@ for numero in range(inicio, fim, salto):
     if numero > 50:
         texto = texto + " Passou de 50"
         break
-        if numero != fim-1:
-            texto = texto + " + "
-            print(f"{texto}")
-            print(f"Soma: {soma}")
+    if numero != fim-1:
+        texto = texto + " + "
+    print(f"{texto}")
+    print(f"Soma: {soma}")
 
 ########################################################
 
