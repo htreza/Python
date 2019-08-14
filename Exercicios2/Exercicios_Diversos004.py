@@ -3,8 +3,8 @@
 ##########################################################################################
 
 while True:
-    resposta = input("você gosta de mim? ")
-    if resposta.upper() == "SIM":
+    resposta = input("Quem é o melhor JOGADOR DE SINUCA? ")
+    if resposta.upper() == "HENRIQUE":
         print("A resposta está correta!!!")
         break
     else:
