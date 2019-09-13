@@ -1,4 +1,9 @@
 #Developed by Henrique Treza
+from django.http import HttpResponse
+
+
+def index(request):
+    return HttpResponse("Hello, world. You're at the polls index.")
 
 ####################################################################################
 #Usando uma lista dentro de outra lista
@@ -47,3 +52,20 @@ else:
 
 
 ####################################################################################
+# Relogio Digital
+
+
+import Tkinter as tk
+from time import strftime as time
+
+rel = tk.label(text=time("%H:%M:%S"), font="Helvetica 120 bold")
+rel.pack()
+
+def tictac():
+    now = time("%H:%M:%S")
+    if rel['text'] != now:
+            rel['text'] = now
+            rel.after(100, tictac)
+
+tictac()
+rel.mainloop()
