@@ -1,9 +1,9 @@
 #Developed by Henrique Treza
-from django.http import HttpResponse
-
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+# from django.http import HttpResponse
+#
+#
+# def index(request):
+#     return HttpResponse("Hello, world. You're at the polls index.")
 
 ####################################################################################
 #Usando uma lista dentro de outra lista
@@ -54,18 +54,163 @@ else:
 ####################################################################################
 # Relogio Digital
 
+#
+# import tkinter as tk
+# from time import strftime as time
+#
+# rel = tk.label(text=time("%H:%M:%S"), font="Helvetica 120 bold")
+# rel.pack()
+#
+# def tictac():
+#     now = time("%H:%M:%S")
+#     if rel['text'] != now:
+#             rel['text'] = now
+#             rel.after(100, tictac)
+#
+# tictac()
+# rel.mainloop()
 
-import Tkinter as tk
-from time import strftime as time
 
-rel = tk.label(text=time("%H:%M:%S"), font="Helvetica 120 bold")
-rel.pack()
 
-def tictac():
-    now = time("%H:%M:%S")
-    if rel['text'] != now:
-            rel['text'] = now
-            rel.after(100, tictac)
+####################################################################################
+# Par ou Impar
 
-tictac()
-rel.mainloop()
+numeros = []
+lista_pares = []
+lista_impares = []
+
+while True:
+    numero = int(input("Informe um número (número 0 para sair): "))
+    if numero == 0:
+        break
+    numeros.append(numero)
+
+for numero in numeros:
+    if numero % 2 == 0:
+        lista_pares.append(numero)
+    else:
+        lista_impares.append(numero)
+
+print("Pares:", lista_pares)
+print("Ímpares:", lista_impares)
+
+
+####################################################################################
+# Contar as palavras que foram inseridas
+
+
+palavras = []
+
+while True:
+    palavra = input("Insira uma palavra (ou tecle o número 0 para sair): ")
+    if palavra == "0":
+        break
+    palavras.append(palavra)
+
+if palavras:
+    palavra_contar = input("Informe a palavra que deseja contar: ")
+    qtd = palavras.count(palavra_contar)
+    print("Temos {} ocorrências de {}".format(qtd, palavra_contar))
+else:
+    print("Nenhuma palavra informada.")
+
+
+####################################################################################
+#Copiar e clonar listas
+
+print("Copiando e clonando listas")
+lista_numeros = [1, 2, 3, 4, 5]
+nova_lista = lista_numeros
+
+print(lista_numeros)
+print(nova_lista)
+
+lista_numeros += [6]
+print(lista_numeros)
+print(nova_lista)
+
+nova_lista += [7]
+print(lista_numeros)
+print(nova_lista)
+
+lista_numeros = [1, 2, 3, 4, 5]
+lista_clonada = lista_numeros[:]
+lista_clonada += [6]
+print(lista_numeros)
+print(lista_clonada)
+lista_numeros += [7]
+print(lista_numeros)
+print(lista_clonada)
+
+print("\nFatiando listas")
+linguagens = ["Python", "Java", "R", "C", "C++", "Go", "JavaScript"]
+linguagens2 = linguagens[3:5]
+print(linguagens)
+print(linguagens2)
+
+print("\nFatiando listas")
+letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letras)
+letras[2:5] = ['C', 'D', 'E']
+print(letras)
+letras[2:5] = []
+print(letras)
+
+####################################################################################
+#Com os números inseridos, eu somo, multiplico e digo o maior e menor número
+
+
+numeros = []
+soma = 0
+multiplicacao = 1
+
+while True:
+    numero = int(input("Insira um número (ou tecle o número 0 para sair): "))
+    if numero == 0:
+        break
+    numeros.append(numero)
+
+if numeros:
+    for numero in numeros:
+        soma += numero
+        multiplicacao *= numero
+
+    numeros.sort()
+    menor = numeros[0]
+    maior = numeros[len(numeros)-1]
+
+    print("Soma: ", soma)
+    print("Multiplicação: ", multiplicacao)
+    print("Maior número: ", maior)
+    print("Menor número: ", menor)
+
+####################################################################################
+
+
+numeros = []
+lista_unica = []
+lista_repetidos = []
+
+while True:
+    numero = int(input("Insira um número (ou tecle o número 0 para sair): "))
+    if numero == 0:
+        break
+    numeros.append(numero)
+
+for x in numeros:
+    if x not in lista_unica:
+        lista_unica.append(x)
+    else:
+        if x not in lista_repetidos:
+            lista_repetidos.append(x)
+
+if numeros:
+    print("Números informados: ", numeros)
+    print("Números sem repetição:", lista_unica)
+    print("Somente números que se repetiram:", lista_repetidos)
+else:
+    print("Nenhum número informado!!!")
+
+
+####################################################################################
+
