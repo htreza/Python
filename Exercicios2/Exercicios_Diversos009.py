@@ -4,14 +4,13 @@ lista = {'Henrique', 'Fabiana', 'Maria Julia', 'Maria Fernanda'}
 nomes = str(input("insira um nome: "))
 for nome in lista:
     nome == 'Henrique'
-    print("Nome mais bonito")
     break
 else:
     print("Outros nomes, são minha familia")
 
 
 
-print("O nome inserido foi {} e  Prémio é {} ".format(nomes, nome))
+print("O nome inserido foi {} e  Prémio é {} ".format(nomes, 'Um Passeio com tudo Pago!!!'))
 
 
 print("##################################################### 1")
