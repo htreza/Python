@@ -1,3 +1,13 @@
+a = 10
+b = 25
+soma = a + b
+
+print("A soma de A e B é: {}".format(soma))
+
+
+
+
+
 #Developed by Henrique Treza
 # from django.http import HttpResponse
 #
@@ -52,23 +62,23 @@ else:
 
 
 ####################################################################################
-# Relogio Digital
+#Relogio Digital
 
-#
-# import tkinter as tk
-# from time import strftime as time
-#
-# rel = tk.label(text=time("%H:%M:%S"), font="Helvetica 120 bold")
-# rel.pack()
-#
-# def tictac():
-#     now = time("%H:%M:%S")
-#     if rel['text'] != now:
-#             rel['text'] = now
-#             rel.after(100, tictac)
-#
-# tictac()
-# rel.mainloop()
+
+import tkinter as tk
+from time import strftime as time
+
+rel = tk.label(text=time("%H:%M:%S"), font="Helvetica 120 bold")
+rel.pack()
+
+def tictac():
+    now = time("%H:%M:%S")
+    if rel['text'] != now:
+            rel['text'] = now
+            rel.after(100, tictac)
+
+tictac()
+rel.mainloop()
 
 
 
@@ -213,4 +223,3 @@ else:
 
 
 ####################################################################################
-
